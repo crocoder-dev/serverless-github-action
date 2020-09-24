@@ -1,0 +1,15 @@
+name: 'CroCoder Serverless'
+description: 'Action that enables running Serverless commands.'
+inputs:
+  command:
+    description: 'The Serverless command you want to run'
+    required: true
+    default: 'help'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.command}}
+branding:
+  icon: 'terminal'  
+  color: 'green'
