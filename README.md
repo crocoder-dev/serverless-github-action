@@ -10,6 +10,8 @@ This action runs Serverless commands.
 
 ## Example usage
 
+```yaml
 uses: crocoder-dev/serverless-github-action@master
 with:
   command: 'deploy'
+```
